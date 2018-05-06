@@ -4,13 +4,11 @@ This is a docker contaienr of Air Video Server HD for Linux (CentOS 7)
 
 ## Usage
 
-```
-docker run --name airvideoserverhd -d \
-    -p 45633:45633 \
-    -v /tmp/video:/video \
-    -v /tmp/config:/config \
-    kinumi/airvideoserverhd
-```
+    docker run --name airvideoserverhd -d \
+        -p 45633:45633 \
+        -v /tmp/video:/video \
+        -v /tmp/config:/config \
+        kinumi/airvideoserverhd
 
 ## NOTE
 
@@ -35,16 +33,14 @@ docker run --name airvideoserverhd -d \
 
 A default userAccount is user/1234
 
-```
-# mutliuser mode (true/false)
-multiUserMode = true
-
-# single user mode password
-# singleUserPassword =
-
-# first user account (can access all folders, no password)
-userAccounts1.accessAllFolders = true
-userAccounts1.allowedFolders =
-userAccounts1.userName = user
-userAccounts1.password = 1234
-```
+    # mutliuser mode (true/false)
+    multiUserMode = true
+    
+    # single user mode password
+    # singleUserPassword =
+    
+    # first user account (can access all folders, no password)
+    userAccounts1.accessAllFolders = true
+    userAccounts1.allowedFolders =
+    userAccounts1.userName = user
+    userAccounts1.password = 1234
